@@ -349,7 +349,10 @@ Image credits: unsplash.com
   .jumbotron {
     margin-top: -75px;
   }
-    .hero { width: 980px; }    
+    .hero { width: 980px; }   
+  .getit_area h1{
+    padding-top: 40px;
+  } 
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
@@ -638,7 +641,7 @@ scroll {  0% {
 }
 
 .getit_area h1{
-  padding-top: 40px;
+  padding-top: 30px;
     color: #ffffff;
 }
 
@@ -780,7 +783,11 @@ scroll {  0% {
       color:#fff;
       position: relative;
       z-index:500;
-      padding:5px 8px;
+      /* padding:5px 8px; */
+    }
+
+    .portfolio .text-title {
+      color: #55acee;
     }
       
       .portfolio .text-category {
