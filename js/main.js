@@ -6,14 +6,26 @@ $(window).load(function () { // makes sure the whole site is loaded
 })
 
 // Sticky Header
-$(window).scroll(function () {
+// $(window).scroll(function () {
 
-  if ($(window).scrollTop() > 100) {
-    $('.navbar').addClass('fixed-top');
-  } else {
-    $('.navbar').removeClass('fixed-top');
-  }
-});
+//   if ($(window).scrollTop() > 100) {
+//     $('.navbar').addClass('fixed-top');
+//   } else {
+//     $('.navbar').removeClass('fixed-top');
+//   }
+// });
+
+let sticky = function () {
+  $(window).scroll(function () {
+    let st = $(this).scrollTop();
+    if (st > 100) {
+      $('.navbar').addClass('shrink');
+    } else {
+      $('.navbar').removeClass('shrink');
+    }
+  });
+};
+sticky();
 
 // Mobile Navigation
 $('.mobile-toggle').click(function () {
